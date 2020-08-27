@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "herokuTest"
+    }
+  },
+  "defaultProject": "herokuTest",
+  "cli": {
+    "analytics": "3a611fc4-2b41-4478-9239-3e9c07307f57"
+  }
 }
