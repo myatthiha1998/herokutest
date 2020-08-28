@@ -20,6 +20,9 @@ jobs:
     - run:
         command: using_the_cli.sh
         name: 'Help Topic: Using the CLI'
+    - run:
+        command: comment_feature_deploy_to_gh.sh
+        name: 'testing'
 workflows:
   welcome:
     jobs:
