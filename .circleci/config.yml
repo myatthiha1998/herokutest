@@ -2,7 +2,12 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/python:3.6.2-stretch-browsers
+      - image: dott/circleci:pyang
+        auth:
+          username: dott
+          password: $DOCKERHUB_PASSWORD
     steps:
       - checkout
       - run: "npm install -g n"
+      - run: "n 12"
+      - run: "node -v"
