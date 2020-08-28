@@ -10,4 +10,13 @@ workflows:
   welcome:
     # Run the welcome/run job in its own container
     jobs:
-      - welcome/run
+      build:
+        steps:
+          - setup_remote_docker
+          - welcome/run
+
+  # build:
+  #   steps:
+  #     # ... steps for building/testing app ...
+
+      
