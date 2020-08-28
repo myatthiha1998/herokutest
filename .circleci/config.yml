@@ -2,10 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: dott/circleci:pyang
-        auth:
-          username: dott
-          password: $DOCKERHUB_PASSWORD
+      - image: circleci/node:6-browsers
     steps:
       - checkout
       - run: "npm install -g n"
